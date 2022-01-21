@@ -3,9 +3,7 @@ package bankEncapsulado;
 public class TestaGetESet {
 	
 	public static void main(String[] args) {
-		Conta conta = new Conta();
-		// conta.numero = 1337;
-		conta.setNumero(1337);
+		Conta conta = new Conta(1337,206846);
 		System.out.println(conta.getNumero());
 		
 		Cliente matheus = new Cliente();
@@ -21,6 +19,7 @@ public class TestaGetESet {
 		System.out.println(titularDaConta);
 		System.out.println(matheus);
 		System.out.println(conta.getTitular());
+		
 		
 	}
 
