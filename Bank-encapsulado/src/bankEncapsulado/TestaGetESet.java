@@ -13,6 +13,15 @@ public class TestaGetESet {
 		matheus.setNome("Matheus Martins");
 		
 		conta.setTitular(matheus);
+		System.out.println(conta.getTitular().getNome());
+		conta.getTitular().setProfissao("programador");
+		// agora em duas linhas:
+		Cliente titularDaConta = conta.getTitular();
+		titularDaConta.setProfissao("programador");
+		System.out.println(titularDaConta);
+		System.out.println(matheus);
+		System.out.println(conta.getTitular());
+		
 	}
 
 }
